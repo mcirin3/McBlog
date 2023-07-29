@@ -13,7 +13,15 @@
         {% csrf_token %}
         {{form.as_p}} 
         <button class="btn btn-secondary"> Post button</button>
+
+
     </div>
+
+    <script> 
+        var name = "{{user.id}}" 
+        document.getElementById("mark").value = name;
+
+    </script>
    {%else%}
 
     YOU ARE NOT ALLOWED HERE !! -__-
